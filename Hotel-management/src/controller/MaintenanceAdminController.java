@@ -24,7 +24,14 @@ public class MaintenanceAdminController {
     public Button btnBack;
 
     public void initialize() {
-
+        ObservableList<String> roomAvailable = FXCollections.observableArrayList();
+        roomAvailable.add("Cleand");
+        roomAvailable.add("Not Cleand");
+        roomAvailable.add("Booking");
+        roomAvailable.add("At Work");
+        cmbRoomAvailable.setItems(roomAvailable);
+        cmbRoomAvailable.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+        });
     }
 
     public void deleteGuestOnAction(ActionEvent actionEvent) {
