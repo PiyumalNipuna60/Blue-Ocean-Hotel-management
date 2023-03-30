@@ -17,7 +17,15 @@ public class LogInAdminController {
     public Button btnAdminLogIn;
 
     public void AdmintLogInOnAction(ActionEvent actionEvent) throws IOException {
-
+        String tempUserName=txtAdminUserName.getText();
+        String tempPassword=txtAdminPassword.getText();
+        if (tempUserName.equals("Admin") && tempPassword.equals("23456")){
+            Stage stage= (Stage) btnAdminLogIn.getScene().getWindow();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/AdminDashBoard.fxml"))));
+            stage.show();
+        }else{
+            new Alert(Alert.AlertType.WARNING,"Try Again!").show();
+        }
     }
 
     public void cancelAdminOnAction(ActionEvent actionEvent) throws IOException {
