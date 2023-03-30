@@ -17,7 +17,15 @@ public class LogInReceptionistController {
     public Button btnCancel;
 
     public void ReceptionistLogInOnAction(ActionEvent actionEvent) throws IOException {
-
+        String tempUserName=txtReceptionUserName.getText();
+        String tempPassword=txtReceptionPassword.getText();
+        if (tempUserName.equals("Resept") && tempPassword.equals("12345")) {
+            Stage stage = (Stage) btnLogin.getScene().getWindow();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/UserDashBoard.fxml"))));
+            stage.show();
+        }else{
+            new Alert(Alert.AlertType.CONFIRMATION,"Try Again!").show();
+        }
     }
 
     public void cancelReceptionistOnAction(ActionEvent actionEvent) throws IOException {
