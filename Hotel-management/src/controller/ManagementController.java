@@ -23,7 +23,9 @@ public class ManagementController {
     }
 
     public void MealDetailsOnAction(ActionEvent actionEvent) throws IOException {
-
+        Stage stage= (Stage) btnMealDetails.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/MealPlanDetails.fxml"))));
+        stage.show();
     }
 
     public void IncomeDetailsOnAction(ActionEvent actionEvent) throws IOException {
