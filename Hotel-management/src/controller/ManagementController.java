@@ -17,7 +17,9 @@ public class ManagementController {
     public Button btnBack1;
 
     public void RoomDetailsOnAction(ActionEvent actionEvent) throws IOException {
-
+        Stage stage= (Stage) btnRoomDetails.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/HotelRoomDetailsManage.fxml"))));
+        stage.show();
     }
 
     public void MealDetailsOnAction(ActionEvent actionEvent) throws IOException {
