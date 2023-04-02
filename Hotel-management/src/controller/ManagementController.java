@@ -35,6 +35,8 @@ public class ManagementController {
     }
 
     public void BackOnActio9n(ActionEvent actionEvent) throws IOException {
-
+        Stage stage=(Stage) btnBack1.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/AdminDashBoard.fxml"))));
+        stage.show();
     }
 }
