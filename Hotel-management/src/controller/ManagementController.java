@@ -29,7 +29,9 @@ public class ManagementController {
     }
 
     public void IncomeDetailsOnAction(ActionEvent actionEvent) throws IOException {
-
+        Stage stage= (Stage) btnIncomDetails.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/IncomDetails.fxml"))));
+        stage.show();
     }
 
     public void BackOnActio9n(ActionEvent actionEvent) throws IOException {
