@@ -1,5 +1,5 @@
 # Blue-Ocean-Hotel-management
-swe corsework project
+swe corsework my first ui project
 
 <img src="https://github.com/PiyumalNipuna60/Blue-Ocean-Hotel-management/blob/master/Hotel-management/src/assets/readme/1.png" alt="drawing" width="90%" height="75%" align="center">
 
