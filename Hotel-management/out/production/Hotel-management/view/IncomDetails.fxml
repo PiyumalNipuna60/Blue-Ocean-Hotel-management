@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="462.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomController">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="702.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/240_F_65821315_WGpXLhFtlEHfGQ8sqJ5RUNFNmnYDGgOd.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnViewMonthly" layoutX="117.0" layoutY="53.0" mnemonicParsing="false" onAction="#ViewMonthlyOnAction" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #fd79a8;" text="View Monthly" />
+      <Pane layoutX="23.0" layoutY="123.0" prefHeight="314.0" prefWidth="659.0" style="-fx-background-color: EF8A42;">
+         <children>
+            <ImageView fitHeight="314.0" fitWidth="659.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/AdobeStock_177186986_Preview.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="92.0" text="Total Income" textFill="#a60711">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="144.0" text="Total Expenses" textFill="#c90303">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="199.0" text="Net Profit" textFill="#da0a0a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTotalIncome" layoutX="240.0" layoutY="93.0" prefHeight="25.0" prefWidth="366.0" />
+            <TextField fx:id="txtTotalExpehnses" layoutX="240.0" layoutY="145.0" prefHeight="25.0" prefWidth="366.0" />
+            <TextField fx:id="txtNetProfit" layoutX="240.0" layoutY="200.0" prefHeight="25.0" prefWidth="366.0" />
+            <Button fx:id="btnBack" layoutX="580.0" layoutY="302.0" mnemonicParsing="false" onAction="#BackOnActio9n" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: 093CF0; -fx-background-color: blue;" text="Back" />
+         </children>
+      </Pane>
+      <Separator layoutX="347.0" orientation="VERTICAL" prefHeight="123.0" prefWidth="3.0" />
+      <Button fx:id="btnViewAnnually" layoutX="443.0" layoutY="53.0" mnemonicParsing="false" onAction="#ViewOnAction" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #fd79a8;" text="View Annually" />
+   </children>
+</AnchorPane>
